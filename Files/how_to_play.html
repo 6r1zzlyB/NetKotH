@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Language" content="en-us">
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<meta http-equiv="refresh" content="600">
+	<title>NetKotH Rules & How-To</title>
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+	<meta charset="utf-8">
+</head>
+
+<body>
+	<div align="center">
+		<form>
+			<input type="button" class="myButton" value="Score Board" onclick="window.location.href='/'" />
+			<input type="button" class="myButton" value="Chatroom" onclick="window.location.href='/blab'" />
+			<input type="button" class="myButton" value="Resources" onclick="window.location.href='/resources.html'" />
+		</form>
+	</div>
+	<hr>
+	<h2>Rules</h2>
+	<ul>
+		<li>Stay on the CTF-GAME network while playing the CTF.</li>
+		<li>Targets are listed on the Score Board page.</li>
+		<li>Referees may change/add other rules at will.</li>
+	</ul>
+	<h2>Scoring Points</h2>
+	<ul>
+		<li>Create you team tag in the following HTML format: <span style="color: #00FFFF;">&lt;team&gt;<span style="color: #ffff00;">Marion "Cobra" Cobretti</span>&lt;/team&gt;</span></li>
+		<li>Your goal is to deface the web page on each target with your team tag.</li>
+		<li>Once per minute (more or less) the scoring engine will see who currently has their team tag on the target, and score it.</li>
+		<li>Players will try to put up their own defacements, take down other player defacements, and lock down the target to keep other players out.</li>
+		<li>The team tag must be on the target for the scoring engine to register it, but the player can change the page however they like.</li>
+		<li>If no one changes your team tag, you will be awarded a point once per minute for that target. NetKotH = Network King of the Hill</li>
+		<li>Referees will work as a blue team to occasionally step in and change things on the targets. Fix the defacement, patch, roll back changes, etc., just to even the playing field and make things interesting.</li>
+	</ul>
+	<h2>Getting Started</h2>
+	<ul>
+		<li>The first step is to know your target. A good tool for recon would be Nmap. A good terminal command to use might be <span style="color: #00FFFF;">nmap &#8208;A 10.0.0.0/24</span>. <a href="https://highon.coffee/blog/nmap-cheat-sheet/" target="_blank">Nmap Cheat Sheet</a></li>
+		<li>Once your recon is done, lets search for an exploit that we can use against the target. A good terminal command to use might be <span style="color: #00FFFF;">searchsploit vsftpd backdoor</span>. <a href="https://www.exploit-db.com/searchsploit/" target="_blank">SearchSploit &#8208; The Manual</a></li>
+		<li>Now you can attack. Metasploit is handy for this. A few good terminal commands to use might be <span style="color: #00FFFF;">msfconsole</span>, then <span style="color: #00FFFF;">help</span>. <a href="https://www.offensive-security.com/metasploit-unleashed/msfconsole-commands/" target="_blank">MSFconsole Commands</a>, <a href="http://www.hackingmonks.net/2016/10/metasploit-cheat-sheet-all-commands.html" target="_blank">Metasploit Cheat Sheet</a></li>
+		<li>After the attack, you should have root access on the target. <a href="https://null-byte.wonderhowto.com/how-to/hack-like-pro-ultimate-command-cheat-sheet-for-metasploits-meterpreter-0149146/" target="_blank">The Ultimate Command Cheat Sheet for Metasploit&rsquo;s Meterpreter</a></li>
+		<li>Learn some vi editor commands, they will help you here. <a href="http://www.lagmonster.org/docs/vi.html" target="_blank">Vi Cheat Sheet 1</a>, <a href="https://highon.coffee/blog/vi-cheat-sheet/" target="_blank">Vi Cheat Sheet 2</a></li>
+		<li>Keep learning.</li>
+	</ul>
+</body>
+
+</html>

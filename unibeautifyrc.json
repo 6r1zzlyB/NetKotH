@@ -1,0 +1,41 @@
+{
+  "XML": {
+    "beautifiers": [
+      "Pretty Diff",
+      "JS-Beautify"
+    ]
+  },
+  "C#": {
+    "beautifiers": [
+      "Pretty Diff"
+    ],
+    "align_assignments": true,
+    "break_chained_methods": true
+  },
+  "CSS": {
+    "beautifiers": [
+      "Prettier",
+      "Pretty Diff",
+      "JS-Beautify"
+    ]
+  },
+  "PHP": {
+    "beautifiers": [
+      "PHP-CS-Fixer"
+    ]
+  },
+  "HTML": {
+    "beautifiers": [
+      "Pretty Diff",
+      "JS-Beautify"
+    ]
+  },
+  "TypeScript": {
+    "beautifiers": [
+      "Prettier",
+      "Pretty Diff"
+    ],
+    "align_assignments": true,
+    "break_chained_methods": true
+  }
+}
