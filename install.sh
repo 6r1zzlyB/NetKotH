@@ -58,27 +58,27 @@ cp /opt/NetKotH/Files/netkothscores.txt /var/log/netkothscores.txt
 # Set netkoth.py to start at boot
 ( crontab -l ; echo "@reboot /etc/netkoth.py &" ) | crontab -
 
-# Install BlaB! chatroom server
-mysql -uroot -e "create database db_blab"
-mysql -uroot -e "create user user_blab"
-mysql -uroot -e "GRANT ALL PRIVILEGES ON db_blab.* TO 'user_blab'@'localhost';"
-wget -O /tmp/blab.zip https://justblab.com/downloads/blab94.zip
-unzip /tmp/blab.zip -d /var/www/html
-mv /var/www/html/blab* /var/www/html/blab
-rm -rf /tmp/blab.zip
-chmod 666 /var/www/html/blab/config.php
-chmod 666 /var/www/html/blab/errors.txt
-chmod 777 /var/www/html/blab/paintings
-IP_Address=$(hostname -I)
-read -p "The Server is about to reboot. Press enter to continue"
-read -p "After it reboots, navigate to $IP_Address:8000"
-read -p "Log in with the default username/password (root/admin)"
-read -p "Reset password for root account"
-read -p "Navigate to $IP_Address/blab/"
-read -p "Follow the install instructions. Use the database "db_blab" & account "user_blab""
-read -p "Run the command "rm -r /var/www/html/blab/install""
-read -p "Navigate to $IP_Address/blab/admin.php"
-read -p "Use the ACP Key you just created to log in"
-read -p "Change the time settings, how log the history is saved, style, & disable guest accounts"
-read -p "Copy and paste the testin /opt/NetKotH/Files/button.html into the Logo/Banner field, on the 'Style' tab"
+# Install BlaB! chatroom server - Uncommend and <input type="button" class="myButton" value="Chatroom" onclick="window.location.href='/blab'" /> to template.htm
+#mysql -uroot -e "create database db_blab"
+#mysql -uroot -e "create user user_blab"
+#mysql -uroot -e "GRANT ALL PRIVILEGES ON db_blab.* TO 'user_blab'@'localhost';"
+#wget -O /tmp/blab.zip https://justblab.com/downloads/blab94.zip
+#unzip /tmp/blab.zip -d /var/www/html
+#mv /var/www/html/blab* /var/www/html/blab
+#rm -rf /tmp/blab.zip
+#chmod 666 /var/www/html/blab/config.php
+#chmod 666 /var/www/html/blab/errors.txt
+#chmod 777 /var/www/html/blab/paintings
+#IP_Address=$(hostname -I)
+#read -p "The Server is about to reboot. Press enter to continue"
+#read -p "After it reboots, navigate to $IP_Address:8000"
+#read -p "Log in with the default username/password (root/admin)"
+#read -p "Reset password for root account"
+#read -p "Navigate to $IP_Address/blab/"
+#read -p "Follow the install instructions. Use the database "db_blab" & account "user_blab""
+#read -p "Run the command "rm -r /var/www/html/blab/install""
+#read -p "Navigate to $IP_Address/blab/admin.php"
+#read -p "Use the ACP Key you just created to log in"
+#read -p "Change the time settings, how log the history is saved, style, & disable guest accounts"
+#read -p "Copy and paste the testin /opt/NetKotH/Files/button.html into the Logo/Banner field, on the 'Style' tab"
 reboot now
