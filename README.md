@@ -1,18 +1,12 @@
 # NetKotH
 
-[![License](https://img.shields.io/badge/License-All%20Rights%20Reserved-red.svg)](./LICENSE)
-[![Author](https://img.shields.io/badge/Author-Matthew%20Stdenis-blue.svg)](mailto:matthew.h.stdenis@gmail.com)
-[![Status](https://img.shields.io/badge/Status-Private%20Repository-orange.svg)](https://github.com/6r1zzlyB/NetKotH)
+[![License](https://img.shields.io/github/license/6r1zzlyB/NetKotH)](./LICENSE)
 [![Technology](https://img.shields.io/badge/Technology-LAMP%20Stack-orange.svg)](https://en.wikipedia.org/wiki/LAMP_(software_bundle))
 [![Platform](https://img.shields.io/badge/Platform-Linux-blue.svg)](https://www.linux.org/)
 
 A comprehensive CTF (Capture The Flag) scoring server with automated LAMP stack deployment, web-based administration, and real-time score tracking.
 
-**Author:** Matthew Stdenis
-**Created:** 2025
-**License:** All Rights Reserved (see [LICENSE](./LICENSE))
-
-**IMPORTANT:** This repository is confidential and intended for personal use only. It is strictly forbidden to share any part of this repository with any third party without written consent from Matthew Stdenis.
+(see [LICENSE](./LICENSE))
 
 ## 📋 Overview
 
@@ -248,15 +242,11 @@ NetKotH/
 
 ## 📄 License
 
-All Rights Reserved - See [LICENSE](./LICENSE) file for details.
+GNU General Public License v3.0 - See [LICENSE](./LICENSE) file for details.
 
-**Author:** Matt S  
-**Repository:** NetKotH (Private)
+**Author:** 6r1zzlyB  
+**Repository:** NetKotH (Public)
 
 ---
 
 **⚠️ DISCLAIMER:** This software is intended for educational and authorized security testing purposes only. Users are responsible for ensuring compliance with applicable laws and regulations. Unauthorized use is strictly prohibited.
-
-© 2025 Matthew Stdenis. All rights reserved.
-
-**⚠️ UNAUTHORIZED USE IS STRICTLY PROHIBITED AND MAY RESULT IN LEGAL ACTION.**
